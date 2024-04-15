@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Inter';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 50px 0;
+}
+
+.Header img{
+  width: 174px;
+}
+
+.Header h1{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.garis{
+  display: none;
+}
+
+.Button{
+  display: flex;
+  justify-content: start;
+  margin-left: 24px;
+}
+.Button button {
+  width: 85px;
+  height: 26px;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: white;
+  margin: 0 2px;
+  text-transform: uppercase;
+}
+
+.Button button:hover {
+  background-color:#403D3D;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Button button:active{
+  background-color:#403D3D;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 318px;
+  border-radius: 5px;
+  margin-top: 36px;
+}
+
+.card-img img{
+  width: 318px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-contents{
+  padding: 16px;
+}
+
+.kategori {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.nama {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.aside-garis {
+  width: 300px;
+  border: none; /* Hilangkan border */
+  border-top: 1px solid #ccc; /* Tambahkan border di bagian atas hr */
+  margin-top: 40px;
+}
+
+.aside-container{
+  padding: 35px ;
+}
+
+.aside-gambar img {
+  width: 256px;
+}
+
+.aside-nama {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.aside-kategori{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.aside-contents h2{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.aside-contents li {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+
+@media screen and (min-width: 376px){
+
+  .Header img{
+    width: 245px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Header h1{
+    size: 40px;
   }
+
+  .flex-layar{
+    display: flex;
+    gap: 60px;
+    margin: 72px 94px;
+  }
+
+  .garis {
+    display: block; /* Tampilkan hr */
+    width: 717px ; /* Atur lebar hr agar mengisi lebar container */
+    border: none; /* Hilangkan border */
+    border-top: 1px solid #C7C3C3; /* Tambahkan border di bagian atas hr */
+    margin: 20px 0; /* Beri jarak atas dan bawah */
+  }
+
+  .cards-container{
+    width: 717px;
+
+    display: flex;
+    flex-flow: wrap row;
+    gap: 40px ;
+  }
+
+  .aside-garis{
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-img img{
+    width:  322px;
+    height: 311px;
+  }
+
+  .card{
+    width: 322px;
+  }
+
+  .Button{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Button button {
+    width: 107px;
+    height: 33px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: white;
+    margin: 0 5px;
+    text-transform: uppercase;
+  }
+
+  .aside-border {
+    width: 483px;
+    height: 1043px;
+    border: 1px solid #C7C3C3;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .aside-gambar img{
+    width: 378px;
+    height: 328px;
+    margin: 8px 0;
+  }
+  
 }
