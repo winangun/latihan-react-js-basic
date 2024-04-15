@@ -5,7 +5,7 @@ function App() {
   console.log(RecipesData);
   return (
     <div className='App'>
-      <p>Hello World</p>
+      <p>Hello World Winangun</p>
     </div>
   );
 }
